@@ -90,18 +90,22 @@ a {
     }
 }
 ///Contact info collumns//
-.column-contact {
-
-    background-color: gray;
-    position: sticky;
-    float: none;
-    width: 10%;
-    height: 100%;
+.row-contact {
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    width: 50px;
+    height: 50px;
     padding: 0;
     margin: 0;
     height: 100px;
     color: red;
+    font-size: 12px;
+    svg{
+        fill: white;
+    }
 }
+
 
 .skills {
     .progress {
