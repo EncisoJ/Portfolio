@@ -85,8 +85,8 @@ a:hover {
 }
 
 #landing .btn-scroll {
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   color: #e7e7e7;
   animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
@@ -97,6 +97,19 @@ a:hover {
 
 #landing .btn-scroll:hover {
   color: #d3ba2d;
+}
+
+.column-contact {
+  background-color: gray;
+  position: -webkit-sticky;
+  position: sticky;
+  float: none;
+  width: 10%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  color: red;
 }
 
 .skills .progress {
@@ -163,7 +176,7 @@ a:hover {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Jomolhari", serif;
-  color: #1DB954;
+  color: #1db954;
   margin-bottom: 10px;
 }
 
