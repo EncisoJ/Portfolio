@@ -1,4 +1,8 @@
-$font: "Jomolhari", serif;
+$font: "Barlow", sans-serif;
+$yellow: rgb(255, 208, 0);
+$main: rgb(255, 183, 100);
+// $yellow: rgb(255, 240, 156);
+// $main: blue;
 
 body {
     font-family: $font;
@@ -60,9 +64,9 @@ a {
 
     h1 {
         margin: 0 0 10px 0;
-        font-size: 64px;
+        font-size: 85px;
         font-family: $font;
-        color: #222222;
+        color: $yellow;
     }
 
     h2 {
@@ -70,7 +74,7 @@ a {
         margin-bottom: 50px;
         font-family: $font;
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 30;
         letter-spacing: 5px;
         text-transform: uppercase;
     }
@@ -85,7 +89,7 @@ a {
         }
 
         &:hover {
-            color: rgb(211, 186, 45);
+            color: $yellow;
         }
     }
 }
@@ -101,11 +105,16 @@ a {
     height: 100px;
     color: red;
     font-size: 12px;
-    svg{
+    svg {
+        z-index: 2;
         fill: white;
     }
-}
 
+    .column-contact {
+        padding: auto;
+        margin: auto;
+    }
+}
 
 .skills {
     .progress {
@@ -137,7 +146,7 @@ a {
     .progress-bar {
         height: 10px;
         transition: 1s;
-        background: linear-gradient(90deg, lightgreen, limegreen);
+        background: $yellow;
     }
 
     h1 {
@@ -159,7 +168,7 @@ a {
     .resume-item {
         padding: 0 0 20px 20px;
         margin-top: -2px;
-        border-left: 2px solid blue;
+        border-left: 2px solid $main;
         position: relative;
         h4 {
             line-height: 18px;
@@ -167,12 +176,12 @@ a {
             font-weight: 600;
             text-transform: uppercase;
             font-family: $font;
-            color: #1db954;
+            color: $yellow;
             margin-bottom: 10px;
         }
         h5 {
             font-size: 16px;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgb(0, 0, 0);
             padding: 5px 15px;
             display: inline-block;
             font-weight: 600;
@@ -197,8 +206,28 @@ a {
             border-radius: 50px;
             left: -9px;
             top: 0;
-            background: #45a29e;
+            background: $main;
             border: 2px solid white;
         }
     }
 }
+
+form div div {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    input.form-control,
+    textarea.form-control {
+        background-color: #fff;
+    }
+}
+
+.contact-wrap{
+    margin: auto;
+    width: 40vw;
+    padding: 25;
+}
+
+.col-sm-6{
+    display: none;
+}
+
