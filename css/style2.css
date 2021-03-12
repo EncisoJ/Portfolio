@@ -232,12 +232,51 @@ form div div textarea.form-control {
   background-color: #fff;
 }
 
+.input-block {
+  padding: 15px;
+  margin: 5px;
+  background-color: #ffb764;
+}
+
 .contact-wrap {
-  margin: auto;
+  right: 50%;
+  margin: 50px;
   width: 40vw;
-  padding: 25;
+  padding: 30;
+  float: right;
+}
+
+.contact-wrap .submit-button {
+  border-radius: 10px;
 }
 
 .col-sm-6 {
   display: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2;
+      grid-template-columns: 2;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+  grid-row: 200px 200px;
+  grid-column: 50% 50%;
+  height: 400px;
+  width: 100vw;
+  margin: auto;
+}
+
+.grid div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.grid div img {
+  min-width: 20vw;
+  min-height: 400px;
+  border: 1px black solid;
 }
